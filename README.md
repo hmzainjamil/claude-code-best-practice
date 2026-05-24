@@ -16,6 +16,21 @@
   Boris Cherny on X (<a href="https://x.com/bcherny/status/2007179832300581177">tweet 1</a> · <a href="https://x.com/bcherny/status/2017742741636321619">tweet 2</a> · <a href="https://x.com/bcherny/status/2021699851499798911">tweet 3</a>)
 </p>
 
+---
+
+## ☠️ STARTUPS / BUSINESSES
+
+Claude Code is the highest-ROI developer tool available right now. Teams using it report 10–100x productivity gains on real production codebases. If you're running a dev team or an agency and you're not using Claude Code at full capability, your competitors who are will outship you at a fraction of the cost.
+
+- **Agencies** — one senior dev + Claude Code = output of 5-person team
+- **SaaS startups** — ship MVP in weeks not months; iterate daily not weekly
+- **Freelancers** — charge full senior rates while Claude handles 70% of implementation
+- **Enterprise teams** — code review, security audit, documentation at zero marginal cost
+
+The patterns in this repo are the difference between using Claude as a fancy autocomplete and using it as an autonomous engineering partner.
+
+---
+
 
 ## 🧠 CONCEPTS
 
@@ -340,20 +355,53 @@ All major workflows converge on the same architectural pattern: **Research → P
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
 </p>
 
+
+---
+
+## HMZ Extensions — DigiMinds Stack
+
+Additional patterns built on top of this reference for the DigiMinds AI agency workflow:
+
+| Extension | Repo | Purpose |
+|---|---|---|
+| `digiminds-speckit` | [hmzainjamil/digiminds-speckit](https://github.com/hmzainjamil/digiminds-speckit) | 6-step SDD spec generator |
+| `claude-mem` | [hmzainjamil/claude-mem-main](https://github.com/hmzainjamil/claude-mem-main) | Persistent cross-session memory |
+| `llm-agents-bundle` | [hmzainjamil/llm-agents-bundle](https://github.com/hmzainjamil/llm-agents-bundle) | Production LLM agent collection |
+| `ui-ux-pro-max` | [hmzainjamil/ui-ux-pro-max-skill-main](https://github.com/hmzainjamil/ui-ux-pro-max-skill-main) | Enterprise UI/UX component generation |
+| `n8n-resources` | [hmzainjamil/n8n-resources](https://github.com/hmzainjamil/n8n-resources) | n8n workflow templates + patterns |
+
+### MAE + SpecKit Integration
+
+```bash
+# Enforce spec-before-code in every session
+echo "Rule: No code before spec. Run /speckit.specify first." >> ~/.claude/CLAUDE.md
+
+# Route tasks to free Tier-0 models by default
+# Claude Sonnet = routing + final output only
+# Groq/Ollama = all sub-tasks, research, extraction
+
+# Daily ops pipeline
+mae daily                    # runs morning briefing
+tcc-dashboard               # see all active tasks
+tcc blast "t1" "t2" "t3"   # parallel task execution
+```
+
+---
+
 ## REPORTS
 
 <p align="center">
-  <a href="reports/claude-agent-sdk-vs-cli-system-prompts.md"><img src="https://img.shields.io/badge/Agent_SDK_vs_CLI-555?style=for-the-badge" alt="Agent SDK vs CLI"></a>
-  <a href="reports/claude-in-chrome-v-chrome-devtools-mcp.md"><img src="https://img.shields.io/badge/Browser_Automation_MCP-555?style=for-the-badge" alt="Browser Automation MCP"></a>
-  <a href="reports/claude-global-vs-project-settings.md"><img src="https://img.shields.io/badge/Global_vs_Project_Settings-555?style=for-the-badge" alt="Global vs Project Settings"></a>
-  <a href="reports/claude-skills-for-larger-mono-repos.md"><img src="https://img.shields.io/badge/Skills_in_Monorepos-555?style=for-the-badge" alt="Skills in Monorepos"></a>
+  <a href="reports/claude-agent-sdk-vs-cli-system-prompts.md"><img src="https://img.shields.io/badge/Agent_SDK_vs_CLI-555?style=flat" alt="Agent SDK vs CLI"></a>
+  <a href="reports/claude-in-chrome-v-chrome-devtools-mcp.md"><img src="https://img.shields.io/badge/Browser_Automation_MCP-555?style=flat" alt="Browser Automation MCP"></a>
+  <a href="reports/claude-global-vs-project-settings.md"><img src="https://img.shields.io/badge/Global_vs_Project_Settings-555?style=flat" alt="Global vs Project Settings"></a>
+  <a href="reports/claude-skills-for-larger-mono-repos.md"><img src="https://img.shields.io/badge/Skills_in_Monorepos-555?style=flat" alt="Skills in Monorepos"></a>
   <br>
-  <a href="reports/claude-agent-memory.md"><img src="https://img.shields.io/badge/Agent_Memory-555?style=for-the-badge" alt="Agent Memory"></a>
-  <a href="reports/claude-advanced-tool-use.md"><img src="https://img.shields.io/badge/Advanced_Tool_Use-555?style=for-the-badge" alt="Advanced Tool Use"></a>
-  <a href="reports/claude-usage-and-rate-limits.md"><img src="https://img.shields.io/badge/Usage_&_Rate_Limits-555?style=for-the-badge" alt="Usage & Rate Limits"></a>
-  <a href="reports/claude-agent-command-skill.md"><img src="https://img.shields.io/badge/Agents_vs_Commands_vs_Skills-555?style=for-the-badge" alt="Agents vs Commands vs Skills"></a>
+  <a href="reports/claude-agent-memory.md"><img src="https://img.shields.io/badge/Agent_Memory-555?style=flat" alt="Agent Memory"></a>
+  <a href="reports/claude-advanced-tool-use.md"><img src="https://img.shields.io/badge/Advanced_Tool_Use-555?style=flat" alt="Advanced Tool Use"></a>
+  <a href="reports/claude-usage-and-rate-limits.md"><img src="https://img.shields.io/badge/Usage_&_Rate_Limits-555?style=flat" alt="Usage & Rate Limits"></a>
+  <a href="reports/claude-agent-command-skill.md"><img src="https://img.shields.io/badge/Agents_vs_Commands_vs_Skills-555?style=flat" alt="Agents vs Commands vs Skills"></a>
   <br>
-  <a href="reports/llm-day-to-day-degradation.md"><img src="https://img.shields.io/badge/LLM_Degradation-555?style=for-the-badge" alt="LLM Degradation"></a>
+  <a href="reports/llm-day-to-day-degradation.md"><img src="https://img.shields.io/badge/LLM_Degradation-555?style=flat" alt="LLM Degradation"></a>
 </p>
 
 <p align="center">
@@ -406,4 +454,5 @@ All major workflows converge on the same architectural pattern: **Research → P
 
 Built by [HMZ](https://github.com/hmzainjamil)
 
-[![Star History Chart](https://api.star-history.com/svg?repos=shanraisshan/claude-code-best-practice&type=Date)](https://star-history.com/#shanraisshan/claude-code-best-practice&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=hmzainjamil/claude-code-best-practice&type=Date)](https://star-history.com/#hmzainjamil/claude-code-best-practice&Date)
+
