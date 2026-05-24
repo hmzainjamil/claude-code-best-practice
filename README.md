@@ -1,5 +1,5 @@
 # claude-code-best-practice
-practice makes claude perfect
+> **practice makes claude perfect** — the definitive reference for Claude Code patterns, skills, and production-grade AI workflows
 
 ![updated with Claude Code](https://img.shields.io/badge/updated_with_Claude_Code-v2.1.89%20(Apr%2001%2C%202026%2012%3A35%20PM%20PKT)-white?style=flat&labelColor=555) <a href="https://github.com/shanraisshan/claude-code-best-practice/stargazers"><img src="https://img.shields.io/github/stars/shanraisshan/claude-code-best-practice?style=flat&label=%E2%98%85&labelColor=555&color=white" alt="GitHub Stars"></a><br>
 
@@ -400,5 +400,10 @@ All major workflows converge on the same architectural pattern: **Research → P
 [![Anthropic Academy](!/tags/anthropic-academy.svg)](https://anthropic.skilljar.com/)
 
 ## Star History
+
+
+---
+
+Built by [HMZ](https://github.com/hmzainjamil)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=shanraisshan/claude-code-best-practice&type=Date)](https://star-history.com/#shanraisshan/claude-code-best-practice&Date)
