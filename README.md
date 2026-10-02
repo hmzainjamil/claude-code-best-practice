@@ -1,23 +1,23 @@
 # Claude Code Best Practice
 
-This repository is presented as a reference guide for Claude Code. The previous README included unsupported install commands, configuration keys, APIs, performance benchmarks, case studies, tests, changelog entries, and operational recipes. It also linked to a banner and documentation index that were not found at the checked paths. These claims have been removed pending source evidence.
+A reference collection for Claude Code workflows, setup notes, skills, and hook examples. It also contains separate Codex hook examples. Instructions can become outdated; verify product behavior against the current vendor documentation before use.
 
-## Current verification
+## Repository guide
 
-| Item | Result |
+| Document | Scope |
 |---|---|
-| Root README | Present |
-| Root license | MIT license present |
-| Claimed `docs/README.md` and `docs/assets/banner.png` | Not found at checked paths |
-| Root package manifest and `SKILL.md` | Not found at checked paths |
-| Install, test, and benchmark behavior | Not verified |
+| [Day 0 setup](tutorial/day0/README.md) | Current setup source and status of the local setup notes |
+| [Claude Code hook files](.claude/hooks/HOOKS-README.md) | This repository's Claude Code hook configuration and script |
+| [Codex hook files](.codex/hooks/HOOKS-README.md) | This repository's Codex hook configuration and script |
+| [Best-practice notes](best-practice/) | Reference material |
+| [Development workflows](development-workflows/) | Workflow examples and notes |
+| [Content review](CONTENT_REVIEW.md) | Prior claims removed and review scope |
+| [Security guidance](SECURITY.md) | Data and command review guidance |
 
-This GitHub search index was unavailable, so the complete repository tree was not independently enumerated. Browse available repository files directly. Do not rely on former executable examples or numerical claims until their sources and behavior are verified.
+## Repository status
 
-## Intended use
+The recursive tree on branch `docs/reference-scope-and-evidence` was checked on 2026-10-02. It contains the linked README files and hook examples. No root `package.json`, root `SKILL.md`, `docs/README.md`, or root `docs/assets/banner.png` was found. The root MIT license is present.
 
-Claude Code guidance can become outdated as the product changes. For current behavior, verify against official documentation and the active CLI. For each recommendation, provide a source, date checked, scope, and limitations. Separate examples from tested instructions.
+No install, compatibility, benchmark, or test result is claimed here. The local setup pages and hook examples have not been validated against every current product version. The hook scripts and project configuration can run commands automatically; inspect them before enabling hooks in a trusted project.
 
-See [CONTENT_REVIEW.md](CONTENT_REVIEW.md) for the checks performed and claims removed. See [LICENSE](LICENSE) for licensing.
-
-See [SECURITY.md](SECURITY.md) for data and command review guidance.
+For current Claude Code behavior, use the [official setup documentation](https://code.claude.com/docs/en/getting-started) and [hooks reference](https://code.claude.com/docs/en/hooks). For Codex, use the [official hooks documentation](https://learn.chatgpt.com/docs/hooks).
