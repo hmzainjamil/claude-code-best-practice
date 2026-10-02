@@ -1,61 +1,11 @@
-# Day 0 — Claude Code Setup
+# Day 0: Install and Sign In
 
-This guide walks you through installing Claude Code on your machine and authenticating so you can start using it.
+Claude Code installation and authentication options change over time. Follow the [official setup guide](https://code.claude.com/docs/en/getting-started) for the current installation method, supported environment, and account requirements.
 
-## Step 1: Install Claude Code
+1. Choose the installation method and authentication option supported for your machine and account.
+2. Open a terminal in the project where you intend to work, then run `claude`.
+3. Follow the sign-in prompts. For installation diagnostics, consult the official guide for `claude doctor`.
 
-Choose your operating system:
+Do not share API keys through Slack, email, chat, or this repository. If your organization uses API credentials or a provider integration, follow its approved credential process and the current vendor documentation.
 
-| OS | Guide |
-|----|-------|
-| Windows | [windows.md](windows.md) |
-| Linux | [linux.md](linux.md) |
-| macOS | [mac.md](mac.md) |
-
-Follow the guide for your OS, then come back here for authentication.
-
----
-
-## Step 2: Verify Installation
-
-After following your OS-specific guide, confirm everything is working:
-
-```bash
-node --version    # Should show v18.x or higher
-claude --version  # Should show the installed Claude Code version
-```
-
----
-
-## Step 3: Login
-
-<img src="assets/login.png" alt="Claude Code login screen" width="50%">
-
-Run `claude` in your terminal. On first launch, it will ask you to choose a login method.
-
-### Method 1: Subscription (Claude Pro / Max)
-
-- Select **Claude.ai account**
-- Browser opens — sign in and authorize
-- Return to terminal, you're logged in
-
-### Method 2a: API Key (Team Invite)
-
-Your team admin invites you from the Anthropic dashboard.
-
-- You receive an **invite email** — accept it and create your Anthropic account
-- Run `claude` in your terminal
-- Select **Anthropic API Key**
-- Your key is **auto-generated** on the dashboard — no manual setup needed
-- Claude Code starts working immediately
-
-### Method 2b: API Key (You have the key)
-
-If someone shared the key with you (via Slack, email, etc.) or you created your own:
-
-- Run `claude` in your terminal
-- Select **Anthropic API Key**
-- Paste your key (starts with `sk-ant-`)
-- The key is **stored permanently** — you won't be asked again
-
----
+The local [macOS](mac.md), [Linux](linux.md), and [Windows](windows.md) pages are retained as historical notes. Their commands and screenshots have not been revalidated for current releases, so treat the official setup guide as authoritative.
