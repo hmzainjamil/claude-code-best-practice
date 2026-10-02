@@ -19,3 +19,5 @@ This GitHub search index was unavailable, so the complete repository tree was no
 Claude Code guidance can become outdated as the product changes. For current behavior, verify against official documentation and the active CLI. For each recommendation, provide a source, date checked, scope, and limitations. Separate examples from tested instructions.
 
 See [CONTENT_REVIEW.md](CONTENT_REVIEW.md) for the checks performed and claims removed. See [LICENSE](LICENSE) for licensing.
+
+See [SECURITY.md](SECURITY.md) for data and command review guidance.
